@@ -1,0 +1,8 @@
+|-- server/
+|   |-- index.js
+|   |-- Router/
+|   |   |-- CharacterRouter.js
+|   |-- Controller/
+|   |   |-- CharacterController.js
+|   |-- .gitignore
+|-- package.json
