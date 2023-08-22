@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "9b78e11f-d213-44d6-8aff-0d4eab117699",
+		"name": "Star Wars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19459280",
+		"_collection_link": "https://restless-escape-458382.postman.co/workspace/My-Workspace~19d7f308-86b7-46d6-80e9-cf00a3f4739f/collection/19459280-9b78e11f-d213-44d6-8aff-0d4eab117699?action=share&source=collection_link&creator=19459280"
+	},
+	"item": [
+		{
+			"name": "Get Characters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{STW}}/characters",
+					"host": [
+						"{{STW}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Characters Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{STW}}/characters/search?q=${searchQuery}",
+					"host": [
+						"{{STW}}"
+					],
+					"path": [
+						"characters",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "${searchQuery}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Characters By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{STW}}/characters/:id",
+					"host": [
+						"{{STW}}"
+					],
+					"path": [
+						"characters",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Homeworld",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{STW}}/characters/:id/homeworld",
+					"host": [
+						"{{STW}}"
+					],
+					"path": [
+						"characters",
+						":id",
+						"homeworld"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Films",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{STW}}/characters/:id/films",
+					"host": [
+						"{{STW}}"
+					],
+					"path": [
+						"characters",
+						":id",
+						"films"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{STW}}/characters/:id/vehicles",
+					"host": [
+						"{{STW}}"
+					],
+					"path": [
+						"characters",
+						":id",
+						"vehicles"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Starships",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{STW}}/characters/:id/starships",
+					"host": [
+						"{{STW}}"
+					],
+					"path": [
+						"characters",
+						":id",
+						"starships"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
